@@ -64,6 +64,7 @@ func init() {
 	rootCmd.PersistentFlags().StringVar(&flagConfig, "config", "", "config file path (default: ~/.guild/config.yaml)")
 	rootCmd.AddCommand(newVersionCmd())
 	rootCmd.AddCommand(newConfigCmd())
+	rootCmd.AddCommand(newAuthCmd())
 }
 
 // Execute runs the root command. Called from main.go.
@@ -123,6 +124,7 @@ and pull context — all from the terminal.`,
 
 	root.AddCommand(newVersionCmd())
 	root.AddCommand(newConfigCmd())
+	root.AddCommand(newAuthCmd())
 
 	return root
 }
