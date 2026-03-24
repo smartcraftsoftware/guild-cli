@@ -1,0 +1,9 @@
+# Build binary
+guild
+guild.exe
+
+# Go build cache
+/dist/
+
+# OS files
+.DS_Store
