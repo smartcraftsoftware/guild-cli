@@ -65,6 +65,7 @@ func init() {
 	rootCmd.AddCommand(newVersionCmd())
 	rootCmd.AddCommand(newConfigCmd())
 	rootCmd.AddCommand(newAuthCmd())
+	rootCmd.AddCommand(newIssuesCmd())
 }
 
 // Execute runs the root command. Called from main.go.
@@ -125,6 +126,7 @@ and pull context — all from the terminal.`,
 	root.AddCommand(newVersionCmd())
 	root.AddCommand(newConfigCmd())
 	root.AddCommand(newAuthCmd())
+	root.AddCommand(newIssuesCmd())
 
 	return root
 }
