@@ -68,6 +68,9 @@ func init() {
 	rootCmd.AddCommand(newIssuesCmd())
 	rootCmd.AddCommand(newTimeCmd())
 	rootCmd.AddCommand(newPRCmd())
+	rootCmd.AddCommand(newCommitCmd())
+	rootCmd.AddCommand(newHookCmd())
+	rootCmd.AddCommand(newSetupCmd())
 	rootCmd.AddCommand(newContextCmd())
 }
 
@@ -132,6 +135,9 @@ and pull context — all from the terminal.`,
 	root.AddCommand(newIssuesCmd())
 	root.AddCommand(newTimeCmd())
 	root.AddCommand(newPRCmd())
+	root.AddCommand(newCommitCmd())
+	root.AddCommand(newHookCmd())
+	root.AddCommand(newSetupCmd())
 	root.AddCommand(newContextCmd())
 
 	return root
