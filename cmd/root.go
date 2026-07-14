@@ -27,8 +27,8 @@ var rootCmd = &cobra.Command{
 	Use:   "guild",
 	Short: "Guild CLI — terminal interface to SmartCraft's Guild platform",
 	Long: `Guild CLI provides a focused developer interface to SmartCraft's Guild
-project tracking platform. Manage issues, log time, report token costs,
-and pull context — all from the terminal.`,
+project tracking platform. Manage issues, log time, and pull context —
+all from the terminal.`,
 	SilenceUsage:  true,
 	SilenceErrors: true,
 	PersistentPreRunE: func(cmd *cobra.Command, args []string) error {
@@ -67,9 +67,6 @@ func init() {
 	rootCmd.AddCommand(newAuthCmd())
 	rootCmd.AddCommand(newIssuesCmd())
 	rootCmd.AddCommand(newTimeCmd())
-	rootCmd.AddCommand(newCommitCmd())
-	rootCmd.AddCommand(newHookCmd())
-	rootCmd.AddCommand(newSetupCmd())
 	rootCmd.AddCommand(newContextCmd())
 }
 
@@ -94,8 +91,8 @@ func NewRootCmd() *cobra.Command {
 		Use:   "guild",
 		Short: "Guild CLI — terminal interface to SmartCraft's Guild platform",
 		Long: `Guild CLI provides a focused developer interface to SmartCraft's Guild
-project tracking platform. Manage issues, log time, report token costs,
-and pull context — all from the terminal.`,
+project tracking platform. Manage issues, log time, and pull context —
+all from the terminal.`,
 		SilenceUsage:  true,
 		SilenceErrors: true,
 		PersistentPreRunE: func(cmd *cobra.Command, args []string) error {
@@ -133,9 +130,6 @@ and pull context — all from the terminal.`,
 	root.AddCommand(newAuthCmd())
 	root.AddCommand(newIssuesCmd())
 	root.AddCommand(newTimeCmd())
-	root.AddCommand(newCommitCmd())
-	root.AddCommand(newHookCmd())
-	root.AddCommand(newSetupCmd())
 	root.AddCommand(newContextCmd())
 
 	return root
