@@ -7,3 +7,6 @@ guild.exe
 
 # OS files
 .DS_Store
+
+# Git worktrees
+/.worktrees/
